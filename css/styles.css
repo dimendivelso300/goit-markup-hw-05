@@ -13,6 +13,15 @@
     --padding-seccion: 94px 0;
 
 }
+
+@keyframes animacion {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2);
+    }
+  }
 .container{
     padding: 0 15px;
     width: 1200px;
@@ -83,6 +92,7 @@ body{
 .page.current-page
 {
 color: var(--accent-color);
+animation: animacion 0.5s infinite;
 
 }
 .item-contac:hover .icon-contact{
@@ -190,16 +200,6 @@ h1{
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);   
 }
 
-/* .modal-close {
-    display: flex;
-    position: absolute;
-    cursor: pointer;
-    border-radius: 50%;
-    background-color: var(--white-color);
-    border-color: #0000001A;
-    width: 30px;
-    height: 30px;    
-} */
 .btn-close{
     display: flex;
     justify-content: center;
@@ -392,6 +392,7 @@ padding: var(--padding-seccion);
 }
 .svg-list3:hover{
     background-color: var(--accent-color);
+    animation: animacion 0.5s infinite;
 }
 .svg-list3:hover .icon-seccion3{
     fill: var(--white-color);
@@ -435,6 +436,8 @@ padding: var(--padding-seccion);
 .elem-customer:hover{
     border-color: var(--accent-color);
     cursor: pointer;
+    animation: animacion 0.5s infinite;
+    
 }
 .elem-customer:hover .icon-customer{
     fill: var(--accent-color);
@@ -519,8 +522,11 @@ footer .container{
 }
 .icon-svg:hover{
     background-color: var(--accent-color);
+    animation: cambio-color 0.8s infinite;
     cursor: pointer;
+    animation: animacion 0.5s infinite;
 }
+
 .icon-svg:hover .icon-footer{
     fill: var(--white-color);
     
@@ -590,7 +596,7 @@ footer .container{
     color: var(--white-color);
 
     transform: translateY(105%);
-    transition: trasform 250ms ease;
+    transition: 250ms ease;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
